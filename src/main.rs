@@ -504,8 +504,8 @@ fn main() {
     window.limit_update_rate(Some(Duration::from_micros(16600)));
     framebuffer.set_background_color(0x000011);
 
-    let sphere_obj = Obj::load("assets/models/sphere.obj").unwrap();
-    let sphere_vertices = simplify_mesh(&sphere_obj.get_vertex_array(), 100);
+    let sphere_obj = Obj::load("assets/models/sphere1.obj").unwrap();
+    let sphere_vertices = sphere_obj.get_vertex_array();
 
     let ywing_obj = Obj::load("assets/models/Y-wing.obj").unwrap();
     let ywing_vertices = simplify_mesh(&ywing_obj.get_vertex_array(), 80);
